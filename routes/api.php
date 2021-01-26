@@ -1,6 +1,10 @@
 <?php
 
+<<<<<<< HEAD
 use App\Http\Controllers\BusinessTypeController;
+=======
+use App\Http\Controllers\ExpertiseController;
+>>>>>>> CRUD-Expertise
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -18,4 +22,8 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+<<<<<<< HEAD
 Route::resource('businessTypes', BusinessTypeController::class);
+=======
+Route::resource('expertises', ExpertiseController::class);  
+>>>>>>> CRUD-Expertise
