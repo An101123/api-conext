@@ -19,3 +19,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 Route::resource('expertises', ExpertiseController::class);  
+// Route::get('expertises', function() {
+//     dd("aaaa");
+// }
+// );  
