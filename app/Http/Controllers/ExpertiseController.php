@@ -20,7 +20,6 @@ class ExpertiseController extends Controller
     }
     public function index()
     {
-        dd('this is index');
         return $this->expertiseService->getExpertises();
     }
 
@@ -32,7 +31,6 @@ class ExpertiseController extends Controller
      */
     public function store(Request $request)
     {
-        dd('ahah');
         $input = $request->all();
         return $this->expertiseService->store($input);
     }
@@ -45,7 +43,7 @@ class ExpertiseController extends Controller
      */
     public function show($id)
     {
-        //
+        return $this->expertiseService->getExpertise($id);
     }
 
     /**
@@ -57,7 +55,8 @@ class ExpertiseController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $input = $request->all();
+        return $this->expertiseService->update($input, $id);
     }
 
     /**
@@ -68,6 +67,6 @@ class ExpertiseController extends Controller
      */
     public function destroy($id)
     {
-        //
+        return $this->expertiseService->delete($id);
     }
 }

@@ -22,13 +22,14 @@ class ExpertiseService implements ExpertiseServiceInterface{
     }
     public function getExpertise($id)
     {
+        return $this->expertiseRepository->getExpertise($id);
     }
     public function update($input, $id)
     {
-
+        return $this->expertiseRepository->update($input, $id);
     }
     public function delete($id)
     {
-
+        return $this->expertiseRepository->delete($id);
     }
 }
