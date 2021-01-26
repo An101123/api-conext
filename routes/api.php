@@ -26,12 +26,10 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 Route::resource('businessTypes', BusinessTypeController::class);
-=======
+
 Route::resource('expertises', ExpertiseController::class);  
->>>>>>> CRUD-Expertise
-=======
+
 Route::resource('localConexts', LocalConextController::class);
->>>>>>> CRUD-LocalConext
+
