@@ -8,4 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class LocalConext extends Model
 {
     use HasFactory;
+<<<<<<< HEAD
+=======
+
+    protected $table = 'local_conexts';
+
+    public $fillable = [
+        'name'
+    ];
+>>>>>>> CRUD-LocalConext
 }
