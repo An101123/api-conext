@@ -8,5 +8,5 @@ interface BusinessTypeRepositoryInterface
     public function store($input);
     public function getBusinessType($id);
     public function update($input, $id);
-    public function delete($input);
+    public function delete($id);
 }

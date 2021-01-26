@@ -10,3 +10,4 @@ RUN apt-get update && apt-get install -y libmcrypt-dev \
     && pecl install mcrypt \
     && docker-php-ext-enable mcrypt \
     && docker-php-ext-install pdo_mysql
+    
