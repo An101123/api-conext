@@ -1,6 +1,6 @@
-FROM php:7.2-fpm
+FROM php:7.4-fpm
 
-RUN pecl install xdebug-2.6.0 \
+RUN pecl install xdebug \
     && docker-php-ext-enable xdebug
 
 RUN apt-get update && apt-get install -y libmcrypt-dev \
